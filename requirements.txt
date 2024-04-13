@@ -3,4 +3,3 @@ numpy
 pandas
 yfinance
 plotly.express
-base64
