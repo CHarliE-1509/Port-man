@@ -30,7 +30,7 @@ with Home:
 
     set_background("image.jpg")
    # st.title('Welcome to Port-Man')
-    st.image('logos-3/Port-man Research_transparent.png')
+    st.image('Port-man Research_transparent.png')
         
 
 #Making of Dashboard 
