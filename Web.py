@@ -29,9 +29,9 @@ with Home:
             unsafe_allow_html=True,
         )
 
-    set_background("/Users/tilakkr/Desktop/Sem2/Port_man/Web_app/Resources/image.jpg")
+    set_background("image.jpg")
    # st.title('Welcome to Port-Man')
-    st.image('/Users/tilakkr/Desktop/Sem2/Port_man/Web_app/Resources/logos-3/Port-man Research_transparent.png')
+    st.image('Port-man Research_transparent.png')
         
 
 #Making of Dashboard 
