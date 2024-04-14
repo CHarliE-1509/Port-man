@@ -3,6 +3,7 @@ import numpy as np
 import pandas as pd
 import yfinance as yf 
 import plotly.express as px
+import datetime as dt
 import math
 import base64
 
@@ -28,17 +29,20 @@ with Home:
             unsafe_allow_html=True,
         )
 
-    set_background("image.jpg")
+    set_background("/Users/tilakkr/Desktop/Sem2/Port_man/Web_app/Resources/image.jpg")
    # st.title('Welcome to Port-Man')
-    st.image('Port-man Research_transparent.png')
+    st.image('/Users/tilakkr/Desktop/Sem2/Port_man/Web_app/Resources/logos-3/Port-man Research_transparent.png')
         
 
 #Making of Dashboard 
 with Dashboard:
     st.title("Stock Dashboard")
+    ticker='Reliance'
+    start_date=dt.datetime(2020,1,1)
+    end_date=dt.datetime.now()
     ticker=st.sidebar.text_input('Ticker', value='Reliance')
-    start_date=st.sidebar.date_input('Start Date')
-    end_date=st.sidebar.date_input('End Date')
+    start_date=st.sidebar.date_input('Start Date',value=dt.datetime(2020,1,1))
+    end_date=st.sidebar.date_input('End Date',value=dt.datetime.now())
 
     ticker_data=yf.download(ticker+'.NS',start=start_date,end=end_date)
     fig = px.line(ticker_data,x=ticker_data.index, y=ticker_data['Adj Close'], title=ticker)
