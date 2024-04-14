@@ -4,3 +4,4 @@ pandas
 yfinance
 plotly.express
 stocknews
+pandas-ta
