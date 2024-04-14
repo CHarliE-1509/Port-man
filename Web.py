@@ -36,7 +36,7 @@ with Home:
 #Making of Dashboard 
 with Dashboard:
     st.title("Stock Dashboard")
-    ticker=st.sidebar.text_input('Ticker')
+    ticker=st.sidebar.text_input('Ticker', value='^NSEI')
     start_date=st.sidebar.date_input('Start Date')
     end_date=st.sidebar.date_input('End Date')
 
