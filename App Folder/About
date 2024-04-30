@@ -1,1 +1,5 @@
-
+'''
+Port-man research is  portfolio management program. The program uses investors risk profile such as age, appetite for risk, income group
+and purpose of investment to analyse and build a portfolio.
+The program in it's basic form uses theories of Markowitz and Efficient frontier to optimise the portfolio asset allocation using
+sharpe ratio.'''
